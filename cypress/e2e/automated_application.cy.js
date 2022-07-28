@@ -3,9 +3,11 @@ import CarSelectPage from "../page-objects/pages/CarSelectPage";
 import CreditHistoryPage from "../page-objects/pages/CreditHistoryPage";
 import HelpBuyingCarPage from "../page-objects/pages/HelpBuyingCarPage";
 import LoanDetailsPage from "../page-objects/pages/LoanDetailsPage";
+import MobileVerificationPage from "../page-objects/pages/MobileVerificationPage";
 import PurchaseInformationPage from "../page-objects/pages/PurchaseInformationPage";
 import RelationshipPage from "../page-objects/pages/RelationshipPage";
 import ResidencyPage from "../page-objects/pages/ResidencyPage";
+import SmsVerificationPage from "../page-objects/pages/SmsVerificationPage";
 import UsagePage from "../page-objects/pages/UsagePage";
 import WorkDetailsPage from "../page-objects/pages/WorkDetailsPage";
 
@@ -24,6 +26,8 @@ describe("Finance Application", function () {
       purchaseHurry,
       buyingFrom,
       monthlyIncome,
+      mobile,
+      smsCode,
     } = this.data;
 
     //1st page
@@ -45,7 +49,7 @@ describe("Finance Application", function () {
 
     /*
      *4th page
-     *selects on this page is arbitrary - it selects the first option (based on the argument provided) regardless of its value
+     *selects on this page is arbitrary - it selects the nth option (based on the argument provided) regardless of its value
      * */
     CarSelectPage.selectMake(1);
     CarSelectPage.selectModel(1);
@@ -79,5 +83,14 @@ describe("Finance Application", function () {
     //10th page
     HelpBuyingCarPage.selectYes();
     HelpBuyingCarPage.continue();
+
+    //11th page
+    MobileVerificationPage.typeNumber(mobile);
+    MobileVerificationPage.checkConfirmation();
+    MobileVerificationPage.continue();
+
+    //12th page
+    SmsVerificationPage.navigatedToPage();
+    SmsVerificationPage.inputCode(smsCode);
   });
 });

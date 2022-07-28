@@ -12,5 +12,7 @@
   "buyingFrom": {
     "dealership": "Dealership"
   },
-  "monthlyIncome": "3000"
+  "monthlyIncome": "3000",
+  "mobile": "0491 570 156",
+  "smsCode": "7777"
 }
