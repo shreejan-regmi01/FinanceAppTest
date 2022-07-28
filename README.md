@@ -4,7 +4,7 @@
 
 * Clone this repository: ```git clone https://github.com/shreejan-regmi01/FinanceAppTest.git```
 * Go to project directory: ```cd FinanceAppTest```
-* Install project Dependencies: ```npm install```
+* Install project dependencies: ```npm install```
 
 Now there are two ways to run the test:
 
@@ -30,7 +30,7 @@ It took me roughly 2hr 50 mins of on and off coding to create the application on
 
 
 ## Any queries that need resolving?
-There were few places in the form where there would already be data in the input fields when the page loaded. This would be, for example, Persoanl Details page - all the fields except the state select would already be filled up when the page load completed, so I did not write code to select/input values for those fields.
+There were few places in the form where there would already be data in the input fields when the page loaded. This would be, for example, Personal Details page - all the fields except the state select would already be filled up when the page load completed, so I did not write code to select/input values for those fields.
 
 
 ## Any improvements you would make to your implementation?
