@@ -44,5 +44,25 @@ I could also have stubbed some network requests, but it seems unnecessary to do 
 
 ## Any bugs that you found?
 
+1. You cannot type negative numbers into the amount and percent fields but if you copy and paste negative numbers and hit continue, you are not shown any validation error message and you can proceed to the next page. This is present in multiple fields.
+(here the deposit amount needs to be lesser than purchase price)
+
+![image](https://user-images.githubusercontent.com/35588108/181466023-a004beba-6122-48c0-bc9f-d3f4c5c2d09b.png)
+
+
+
+2. I could enter upto number 10^310 in the amount text field and could move to the next screen. For reference, the number of atoms in the universe is 10^82.
+
+![image](https://user-images.githubusercontent.com/35588108/181467395-71803882-833a-4dc8-a714-15a50a31f799.png)
+
+3. I could copy paste mobile number such as this and continue. The -ve sign was not displayed in the next screen and when we return to the same screen. Can be more of an enhancement than a bug. 
+
+![image](https://user-images.githubusercontent.com/35588108/181468255-673ffcfd-636c-4bcb-a6c5-0970c5017202.png)
+
+4. I could input name such as this and then move to the next screen
+
+![image](https://user-images.githubusercontent.com/35588108/181469139-fe7b8b1c-cfd4-4ff1-a731-6720c097f63a.png)
+
+
 
 
