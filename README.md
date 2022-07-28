@@ -21,9 +21,11 @@ Now there are two ways to run the test:
 **Some info:** 
 
 I have used my own project structure following Page Object Model (POM) for code reusability. In POM, we exact a specific cypress code block into a reusable 
-function that does a specific task and keep it inside a relevant page class . This function can be called from any test.
+function that does a specific task and the function is kept inside a relevant page class . This function can be called from any test.
 
 The test script is located in `cypress/e2e/automated_application.cy.js`
+
+Selectors for some input elements (eg. options in dropdown) are based on the specific data defined in fixtures. Some are arbitrarily selected, based on position. I have used both of these approaches for selecting input elements. Which is better depends on the kind of test we are writing.
 
 ## How long did it take to create the application?
 It took me roughly 2hr 50 mins of on and off coding to create the application only (not including the time to write this documentation). 
