@@ -1,4 +1,4 @@
-# FinanceAppTest
+# FinanceAppTest (Bonus Section Included)
 
 ## Documentation (Including how to setup and run)
 
