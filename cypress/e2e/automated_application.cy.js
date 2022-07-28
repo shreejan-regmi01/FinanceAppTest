@@ -4,6 +4,7 @@ import CreditHistoryPage from "../page-objects/pages/CreditHistoryPage";
 import HelpBuyingCarPage from "../page-objects/pages/HelpBuyingCarPage";
 import LoanDetailsPage from "../page-objects/pages/LoanDetailsPage";
 import MobileVerificationPage from "../page-objects/pages/MobileVerificationPage";
+import PersonalDetailsPage from "../page-objects/pages/PersonalDetailsPage";
 import PurchaseInformationPage from "../page-objects/pages/PurchaseInformationPage";
 import RelationshipPage from "../page-objects/pages/RelationshipPage";
 import ResidencyPage from "../page-objects/pages/ResidencyPage";
@@ -92,5 +93,15 @@ describe("Finance Application", function () {
     //12th page
     SmsVerificationPage.navigatedToPage();
     SmsVerificationPage.inputCode(smsCode);
+
+    //13th page
+    PersonalDetailsPage.navigatedToPage();
+    PersonalDetailsPage.selectState(1);
+    PersonalDetailsPage.continue();
+
+    cy.url({ timeout: 8000 }).should(
+      "contain",
+      "/main-application/personal-info-3"
+    );
   });
 });

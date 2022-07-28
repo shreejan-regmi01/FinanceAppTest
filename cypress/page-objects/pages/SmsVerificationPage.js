@@ -4,7 +4,7 @@ export default class SmsVerificationPage extends BasePage {
   static firstInputField = "(//input)[1]";
 
   static navigatedToPage() {
-    cy.url({ timeout: 6000 }).should("contain", "/mobile-verify-3");
+    cy.url({ timeout: 8000 }).should("contain", "/mobile-verify-3");
   }
 
   static inputCode(code) {
