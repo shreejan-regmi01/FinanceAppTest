@@ -1,0 +1,16 @@
+{
+  "purchasePrice": "10000",
+  "depositAmount": "5000",
+  "term": "4 years",
+  "balloon": "2",
+  "carCondition": {
+    "used": "Used"
+  },
+  "purchaseHurry": {
+    "asap": "ASAP"
+  },
+  "buyingFrom": {
+    "dealership": "Dealership"
+  },
+  "make": "Abarth"
+}
