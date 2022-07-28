@@ -6,6 +6,6 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     video: true,
-    baseUrl: "http://app-qa.carclarity.com.au/",
+    baseUrl: "https://app-qa.carclarity.com.au/",
   },
 });
