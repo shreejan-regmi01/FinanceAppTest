@@ -63,6 +63,8 @@ I could also have stubbed some network requests, but it seems unnecessary to do 
 
 ![image](https://user-images.githubusercontent.com/35588108/181469139-fe7b8b1c-cfd4-4ff1-a731-6720c097f63a.png)
 
+5. No amount input field allow input of decimal numbers.
+
 
 
 
