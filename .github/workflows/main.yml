@@ -31,4 +31,4 @@ jobs:
 
       # Run tests
       - name: Run cypress tests
-        run: npm cy:run
+        run: npm run cy:run
